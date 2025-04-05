@@ -38,7 +38,7 @@ function Update({item}) {
   return (
     <Fragment>
     
-<button type="button" class="btn btn-primary" data-toggle="modal"  data-target={`#id${item.program_id}`}>
+<button type="button" class="bg-black text-white p-2 rounded hover:bg-gray-800 transition" data-toggle="modal"  data-target={`#id${item.program_id}`}>
   Update
 </button>
 
@@ -162,10 +162,10 @@ function Update({item}) {
 
       
       <div class="modal-footer">
-      <button type="button" class="btn btn-danger"  data-dismiss="modal"  onClick={(e) => updateProgram(e)}>
+      <button type="button" class="bg-red-500 text-white p-2 rounded hover:bg-red-600 transition"  data-dismiss="modal"  onClick={(e) => updateProgram(e)}>
   Edit
 </button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="bg-red-500 text-white p-2 rounded hover:bg-red-600 transition" data-dismiss="modal">Close</button>
       </div>
 
     </div>
